@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfiniteMode</class>
+ <widget class="QMainWindow" name="InfiniteMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+border-image: url(:/BG/BG/backblur.png);
+}</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="N1">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#N1{
+border-image: url(:/BG/BG/Num.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Close1">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#Close1{
+background-color: rgb(255, 119, 121);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>71</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url();
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>290</y>
+      <width>71</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url();
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="N2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>280</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#N2{
+border-image: url(:/BG/BG/Num.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>120</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk
+{
+border-radius:8px;
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 rgb(255, 211, 211) stop:1  rgb(207, 255, 190));
+}
+QProgressBar#progressBar
+{
+height:22px;
+text-align:right;
+border-radius:9px;
+border-style:solid;
+border-width:3px;
+boder-color:rgb(201, 201, 211);
+background: rgb(201, 201, 211);
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>90</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>HP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>160</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>Score</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>160</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>Combo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Hund">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>770</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:17px;
+</string>
+    </property>
+    <property name="text">
+     <string>Chaos value</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Score">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>200</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>34</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Combo">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>200</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>34</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>440</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/Space.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/Clear.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>210</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/No.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>280</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/Re.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/Submmit.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>870</y>
+      <width>501</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk
+{
+border-radius:8px;
+background:rgb(54, 53, 53);
+}
+QProgressBar#progressBar_2
+{
+height:22px;
+text-align:right;
+border-radius:9px;
+border-style:solid;
+border-width:3px;
+boder-color:rgb(201, 201, 211);
+background: rgb(201, 201, 211);
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TOPB">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>-540</y>
+      <width>391</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/green.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TopLa">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>-120</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:30px;</string>
+    </property>
+    <property name="text">
+     <string>You're trapped</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ToP">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>-130</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/No.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>-530</y>
+      <width>371</width>
+      <height>497</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk
+{
+border-radius:15px;
+	background-color: rgba(5, 149, 4, 100);
+}
+QProgressBar#progressBar_3
+{
+border-radius:15px;
+border-style:solid;
+border-width:3px;
+boder-color:rgba(201, 201, 211,0);
+background-color: rgba(255, 255, 255, 0);
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HunT">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>800</y>
+      <width>251</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/warning.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="C1">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>280</y>
+      <width>81</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>SplitVCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::FocusPolicy::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*设置qcheckbox控件中的勾选框的属性*/
+ QCheckBox::indicator{
+border-radius:10px;
+width: 65px;/*勾选框的大小*/
+height: 65px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(255, 135, 137);
+}
+QCheckBox::indicator:checked {
+width: 65px;/*勾选框的大小*/
+height: 65px;
+border-radius:10px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(165, 255, 151);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="C3">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>280</y>
+      <width>81</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>SplitVCursor</cursorShape>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*设置qcheckbox控件中的勾选框的属性*/
+ QCheckBox::indicator{
+border-radius:10px;
+width: 65px;/*勾选框的大小*/
+height: 65px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(255, 135, 137);
+}
+QCheckBox::indicator:checked {
+width: 65px;/*勾选框的大小*/
+height: 65px;
+border-radius:10px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(165, 255, 151);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="C2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>280</y>
+      <width>81</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>SplitVCursor</cursorShape>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*设置qcheckbox控件中的勾选框的属性*/
+ QCheckBox::indicator{
+border-radius:10px;
+width: 65px;/*勾选框的大小*/
+height: 65px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(255, 135, 137);
+}
+QCheckBox::indicator:checked {
+width: 65px;/*勾选框的大小*/
+height: 65px;
+border-radius:10px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(165, 255, 151);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="C4">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>280</y>
+      <width>81</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>SplitVCursor</cursorShape>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*设置qcheckbox控件中的勾选框的属性*/
+ QCheckBox::indicator{
+border-radius:10px;
+width: 65px;/*勾选框的大小*/
+height: 65px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(255, 135, 137);
+}
+QCheckBox::indicator:checked {
+width: 65px;/*勾选框的大小*/
+height: 65px;
+border-radius:10px;
+    border-width:2px;
+	border-color:rgb(55, 55, 55);
+border-style:solid;
+	background-color: rgb(165, 255, 151);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="No1">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>310</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;</string>
+    </property>
+    <property name="text">
+     <string>7V</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-60</y>
+      <width>501</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk
+{
+border-radius:8px;
+background:rgb(204, 216, 228);
+}
+QProgressBar#progressBar_4
+{
+height:22px;
+text-align:right;
+border-radius:9px;
+border-style:solid;
+border-width:3px;
+boder-color:rgb(201, 201, 211);
+background: rgb(201, 201, 211);
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Progre">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>220</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(133, 84, 0);</string>
+    </property>
+    <property name="text">
+     <string>混沌值</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="No2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>310</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;</string>
+    </property>
+    <property name="text">
+     <string>7V</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="No3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>310</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;</string>
+    </property>
+    <property name="text">
+     <string>7V</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="No4">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>310</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;</string>
+    </property>
+    <property name="text">
+     <string>7V</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>280</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/NumA.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ERRORT">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>-270</y>
+      <width>361</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/mech.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ERRORT1">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>-150</y>
+      <width>441</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(133, 84, 0);
+border-radius:10px;
+border-color:rgb(133, 84, 0);
+background-color: rgb(255, 255, 255);
+border-width:2px;
+border-style:solid;
+font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>请将电压调整至25V (3/3)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Q">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>330</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:35px;</string>
+    </property>
+    <property name="text">
+     <string>Q</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="W">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>330</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:35px;</string>
+    </property>
+    <property name="text">
+     <string>W</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="E">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>330</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:35px;</string>
+    </property>
+    <property name="text">
+     <string>E</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="R">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>330</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:35px;</string>
+    </property>
+    <property name="text">
+     <string>R</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="IncreT">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>100</y>
+      <width>161</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/BG/BG/mount.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Score_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>50</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>MaxScore</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CNT">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>220</y>
+      <width>241</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>100</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#CNT{
+border-image: url(:/BG/BG/Num.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>C2</zorder>
+   <zorder>C1</zorder>
+   <zorder>C3</zorder>
+   <zorder>C4</zorder>
+   <zorder>Q</zorder>
+   <zorder>R</zorder>
+   <zorder>W</zorder>
+   <zorder>E</zorder>
+   <zorder>No1</zorder>
+   <zorder>No2</zorder>
+   <zorder>No4</zorder>
+   <zorder>No3</zorder>
+   <zorder>Close1</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>N2</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>Hund</zorder>
+   <zorder>Score</zorder>
+   <zorder>Combo</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>progressBar_2</zorder>
+   <zorder>label_12</zorder>
+   <zorder>HunT</zorder>
+   <zorder>progressBar_4</zorder>
+   <zorder>Progre</zorder>
+   <zorder>N1</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>IncreT</zorder>
+   <zorder>Score_2</zorder>
+   <zorder>label_8</zorder>
+   <zorder>progressBar_3</zorder>
+   <zorder>TOPB</zorder>
+   <zorder>ToP</zorder>
+   <zorder>TopLa</zorder>
+   <zorder>ERRORT1</zorder>
+   <zorder>ERRORT</zorder>
+   <zorder>CNT</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dead</class>
+ <widget class="QMainWindow" name="Dead">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+border-image: url(:/BG/BG/Deadbd.png);}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="HowT">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>80</y>
+      <width>591</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:50px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>Machine Error</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>240</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:40px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>Score</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>350</y>
+      <width>261</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:40px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>MaxCombo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>450</y>
+      <width>261</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:40px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>Get EXP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ScoreL">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:40px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ComboL">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>350</y>
+      <width>281</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:40px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Expl">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>450</y>
+      <width>281</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:40px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>520</y>
+      <width>261</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:25px;
+color: rgb(70, 70, 70);
+</string>
+    </property>
+    <property name="text">
+     <string>LV1</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>582</y>
+      <width>651</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk
+{
+border-radius:8px;
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 rgb(237, 134, 255) stop:1  rgb(114, 116, 255));
+}
+QProgressBar#progressBar
+{
+height:22px;
+text-align:right;
+border-radius:9px;
+border-style:solid;
+border-width:3px;
+boder-color:rgb(201, 201, 211);
+background: rgb(201, 201, 211);
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Close1">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>360</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(59, 59, 59);
+background-color :rgb(255, 138, 140);
+border-radius:10px;
+font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>Back to Main</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AgainB">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>290</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#AgainB{
+	color: rgb(59, 59, 59);
+background-color: rgb(215, 255, 220);
+border-radius:10px;
+font-size:25px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Again!</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

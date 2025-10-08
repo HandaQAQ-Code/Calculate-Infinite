@@ -1,0 +1,60 @@
+<RCC>
+    <qresource prefix="/Font">
+        <file>font/chinese2.ttf</file>
+    </qresource>
+    <qresource prefix="/Music">
+        <file>Ms/MainUI.mp3</file>
+        <file>Ms/Click.wav</file>
+        <file>Ms/Effect.wav</file>
+        <file>Ms/Click0.wav</file>
+        <file>Ms/Click2.wav</file>
+        <file>Ms/Click3.wav</file>
+        <file>Ms/Click4.wav</file>
+        <file>Ms/CtDown.wav</file>
+        <file>Ms/D.wav</file>
+    </qresource>
+    <qresource prefix="/BG">
+        <file>BG/backblur.png</file>
+        <file>BG/ban.png</file>
+        <file>BG/battle.jpg</file>
+        <file>BG/bd.png</file>
+        <file>BG/blurbat.jpg</file>
+        <file>BG/boss_1.jpg</file>
+        <file>BG/boss_2.jpg</file>
+        <file>BG/boss_3.jpg</file>
+        <file>BG/boss_4.jpg</file>
+        <file>BG/boss_5.jpg</file>
+        <file>BG/boss_6.jpg</file>
+        <file>BG/Clear.png</file>
+        <file>BG/de.jpg</file>
+        <file>BG/Deadbd.png</file>
+        <file>BG/green.png</file>
+        <file>BG/mech.png</file>
+        <file>BG/mount.png</file>
+        <file>BG/myicon.png</file>
+        <file>BG/No.png</file>
+        <file>BG/NoC.png</file>
+        <file>BG/NoP.png</file>
+        <file>BG/NotR.png</file>
+        <file>BG/Num.png</file>
+        <file>BG/NumA.png</file>
+        <file>BG/power.svg</file>
+        <file>BG/Pressed.png</file>
+        <file>BG/Q.png</file>
+        <file>BG/QP.png</file>
+        <file>BG/Re.png</file>
+        <file>BG/Sett.png</file>
+        <file>BG/settbd.jpg</file>
+        <file>BG/Space.png</file>
+        <file>BG/Submmit.png</file>
+        <file>BG/Sure.png</file>
+        <file>BG/SureH.png</file>
+        <file>BG/temp4.png</file>
+        <file>BG/warning.png</file>
+        <file>BG/Yes.png</file>
+        <file>BG/组合 1.png</file>
+        <file>BG/组合 2.png</file>
+        <file>BG/组合 3.png</file>
+        <file>BG/组合 4.png</file>
+    </qresource>
+</RCC>
